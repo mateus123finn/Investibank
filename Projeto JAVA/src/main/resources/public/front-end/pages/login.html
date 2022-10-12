@@ -61,19 +61,19 @@
 
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
               
-                <form>
+                <form action="/login" method="post">
       
                 <!-- Email input -->
                 <div class="form-outline mb-4" style = "color:white">
                     <label class="form-label" for="form3Example3" style="font-weight:bold;">Email</label>
-                  <input type="email" id="form3Example3" class="form-control form-control-lg"
+                  <input name="Usuario" type="email" id="form3Example3" class="form-control form-control-lg"
                     placeholder="Digite o seu email" />
                 </div>
       
                 <!-- Password input -->
                 <div class="form-outline mb-3" style = "color:white">
                     <label class="form-label" for="form3Example4" style="font-weight:bold;">Senha</label>
-                  <input type="password" id="form3Example4" class="form-control form-control-lg"
+                  <input name="Senha" type="password" id="form3Example4" class="form-control form-control-lg"
                     placeholder="Digite sua senha" />
                 </div>
       
@@ -89,7 +89,7 @@
                 </div>
       
                 <div class="text-center text-lg-start mt-4 pt-2">
-                  <button type="button" class="btn btn-light btn-lg"
+                  <button type="submit" class="btn btn-light btn-lg"
                     style="padding-left: 5.5rem; padding-right: 5.5rem; align-items: center;" >Login</button>
                   <p class="small fw-bold mt-2 pt-1 mb-0"  >Não tem uma conta? <a href="cadastro.html"
                       class="link-danger" style="color: white">Criar conta</a></p>
