@@ -42,9 +42,15 @@
               <li class ="nav-item">
                 <a href = "sobre.html" class = "nav-link">Sobre</a>
               </li>
-              <li class = "nav-item">
-                <a href = "login.html" class = "btn btn-outline-light ml-4">Entrar</a>
-              </li>
+            <li class = "nav-item contaN">
+            <a href = "pages/login.html" class = "btn btn-outline-light ml-4">Entrar</a>
+          </li>
+          <li class = "nav-item conta">
+            <a href = "/infoConta" class = "nav-link" id="nomeUser"></a>
+          </li>
+          <li class = "nav-item conta">
+            <a href = "/sair" class = "nav-link">LogOut</a>
+          </li>
             </ul>
           </div>
         </nav>
@@ -101,6 +107,24 @@
     </footer>
     <!--FIM do footer-->
           <!--FIM FOOTER-->
+          <script>
+              var nome = document.cookie.split("; ").find((row) => row.startsWith('nome='))?.split('=')[1];
 
+            if (!document.cookie.split(';').some((item) => item.trim().startsWith('usuario='))){
+              let x = document.getElementsByClassName("conta");
+              let y = document.getElementsByClassName("contaN");
+              x[0].style.display = "none";
+              x[1].style.display = "none";
+              y[0].style.display = "block";
+            } else {
+              let x = document.getElementsByClassName("conta");
+              let y = document.getElementsByClassName("contaN");
+              document.getElementById("nomeUser").innerHTML = nome;
+              x[0].style.display = "block";
+              x[1].style.display = "block";
+              y[0].style.display = "none";
+            }
+                    
+          </script>
   </body>
 </html>

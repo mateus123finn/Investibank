@@ -42,8 +42,14 @@
           <li class ="nav-item">
             <a href = "pages/sobre.html" class = "nav-link">Sobre</a>
           </li>
-          <li class = "nav-item">
+          <li class = "nav-item contaN">
             <a href = "pages/login.html" class = "btn btn-outline-light ml-4">Entrar</a>
+          </li>
+          <li class = "nav-item conta">
+            <a href = "/infoConta" class = "nav-link" id="nomeUser"></a>
+          </li>
+          <li class = "nav-item conta">
+            <a href = "/sair" class = "nav-link">LogOut</a>
           </li>
         </ul>
       </div>
@@ -210,6 +216,25 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  
+    <script>
+
+      var nome = document.cookie.split("; ").find((row) => row.startsWith('nome='))?.split('=')[1];
+
+      if (!document.cookie.split(';').some((item) => item.trim().startsWith('usuario='))){
+        let x = document.getElementsByClassName("conta");
+        let y = document.getElementsByClassName("contaN");
+        x[0].style.display = "none";
+        x[1].style.display = "none";
+        y[0].style.display = "block";
+      } else {
+        let x = document.getElementsByClassName("conta");
+        let y = document.getElementsByClassName("contaN");
+        document.getElementById("nomeUser").innerHTML = nome;
+        x[0].style.display = "block";
+        x[1].style.display = "block";
+        y[0].style.display = "none";
+      }
+              
+    </script>
   </body>
 </html>
