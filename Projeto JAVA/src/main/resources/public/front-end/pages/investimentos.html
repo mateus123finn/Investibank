@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type = "text/css" href = "css/style.css">
+    <title>Investibank</title>
+
+</head>
+
+<body>
+
+    <header>
+    <nav class = "navbar navbar-expand-sm navbar-dark bg-primary">
+      <a href = "" class = "navbar-brand">
+        <img src = "img2/logo_png.png" height = "68" width="261">
+      </a>
+
+      <button class = "navbar-toggler" data-toggle = "collapse" 
+      data-target = "#nav-target">
+        <span class = "navbar-toggler-icon"></span>
+      </button>
+
+      <div class = "collapse navbar-collapse" id = "nav-target">
+        <ul class = "navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href = "" class = "nav-link">Home</a>
+          </li>
+          <li class ="nav-item">
+            <a href = "sobre.html" class = "nav-link">Sobre</a>
+          </li>
+          <li class = "nav-item">
+            <a href = "login.html" class = "btn btn-outline-light ml-4">Entrar</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+
+
+    <!-- INICIO SEÇÃO SAIBA-->
+    <section class = "titulo">
+            <h2 style="font-size: 50px;">Ações</h2>
+    </section>
+
+<main>
+  <div class = "acoes" style="margin-left: 20%; background-color: rgb(130, 130, 167); margin-right: 20%;">
+
+    <div class = card1 style="width: 100%; overflow: hidden;">
+      <h1>Ambev SA</h1>
+      <p class="sigla">ABEV3</p>
+      <p class="price">R$ 15,06</p>
+      <button onclick="openNav();">Comprar</button>
+    </div>
+
+    <div class = card1 style="width: 100%; overflow: hidden;">
+      <h1>Petrobras</h1>
+      <p class="sigla">PETR4</p>
+      <p class="price">R$ 34,00</p>
+      <button onclick="openNav()">Comprar</button>
+    </div>
+
+    <div class = card1 style="width: 100%; overflow: hidden;">
+      <h1>Vale</h1>
+      <p class="sigla">VALE3</p>
+      <p class="price">R$ 72,20</p>
+      <button onclick="openNav()">Comprar</button>
+    </div>
+
+    <div class = card1 style="width: 100%; overflow: hidden;">
+      <h1>Itaú Unibanco</h1>
+      <p class="sigla">ITUB4</p>
+      <p class="price">R$ 28,67</p>
+      <button onclick="openNav()">Comprar</button>
+    </div>
+
+    <div class = card1 style="width: 100%; overflow: hidden;">
+      <h1>Bradesco</h1>
+      <p class="sigla">BBDC4</p>
+      <p class="price">R$ 19,86</p>
+      <button onclick="openNav()">Comprar</button>
+    </div>
+
+    <div class = card1 style="width: 100%; overflow: hidden;">
+      <h1>Banco do Brasil</h1>
+      <p class="sigla">BBAS3</p>
+      <p class="price">R$ 39,40</p>
+      <button onclick="openNav()">Comprar</button>
+    </div>
+
+    <div class = card1 style="width: 100%; overflow: hidden;">
+      <h1>B3</h1>
+      <p class="sigla">B3SA3</p>
+      <p class="price">R$ 13,90</p>
+      <button onclick="openNav()">Comprar</button>
+    </div>
+
+    <div class = card1 style="width: 100%; overflow: hidden;">
+      <h1>Gerdau</h1>
+      <p class="sigla">GGBR4</p>
+      <p class="price">R$ 25,87</p>
+      <button onclick="openNav()">Comprar</button>
+    </div>
+
+    <div class = card1 style="width: 100%; overflow: hidden;">
+      <h1>Magazine Luiza</h1>
+      <p class="sigla">MGLU3</p>
+      <p class="price">R$ 4,92</p>
+      <button onclick="openNav()">Comprar</button>
+    </div>
+
+    <div class = card1 style="width: 100%; overflow: hidden;">
+      <h1>Usiminas</h1>
+      <p class="sigla">USIM5</p>
+      <p class="price">R$ 7,70</p>
+      <button onclick="openNav()">Comprar</button>
+    </div>
+
+    <div class = card1 style="width: 100%; overflow: hidden;">
+      <h1>Cemig</h1>
+      <p class="sigla">CMIG4</p>
+      <p class="price">R$ 10,49</p>
+      <button onclick="openNav()">Comprar</button>
+    </div>
+
+    <div class = card1 style="width: 100%; overflow: hidden;">
+      <h1>Localiza</h1>
+      <p class="sigla">RENT3</p>
+      <p class="price">R$ 66,20</p>
+      <button onclick="openNav()">Comprar</button>
+    </div>
+
+  </div>
+
+ <div id="myNav" class="overlay">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <div class="overlay-content">
+    <h1 style="color: rgb(228, 222, 222);">Quantidade</h1><br>  
+    <input id = "quant" type="text" style="border-radius: 4px;" /><br><br>
+    <button onclick="closeNav(); getQuant()">Comprar</button>
+  </div>
+
+ </div>
+</main>
+
+
+
+</body>
+
+
+
+<script type="text/javascript" src="./script/investimentos.js"></script>
