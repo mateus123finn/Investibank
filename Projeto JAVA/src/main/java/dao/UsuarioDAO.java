@@ -93,4 +93,21 @@ public class UsuarioDAO extends DAO{
         }
         return status;
     }
+
+    public Double getCarteira(String cpf){
+        Double preco = 0.0;
+        try {
+            Statement st = conexao.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+            String sql = "SELECT * FROM USUARIO WHERE Cpf = '"+cpf+"'";
+            //System.out.println(sql);
+            ResultSet rs = st.executeQuery(sql);
+            if(rs.next()){
+                preco = Double.parseDouble(rs.getString("Valor"));
+            }
+            st.close();
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
+        return preco;
+    }
 }

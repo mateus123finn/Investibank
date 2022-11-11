@@ -42,14 +42,20 @@
           <li class ="nav-item">
             <a href = "pages/sobre.html" class = "nav-link">Sobre</a>
           </li>
-          <li class = "nav-item contaN">
-            <a href = "pages/login.html" class = "btn btn-outline-light ml-4">Entrar</a>
+          <li class ="nav-item conta">
+            <a href = "/investimentos" class = "nav-link">Ações</a>
+          </li>
+          <li class ="nav-item conta">
+            <a href = "/meu" class = "nav-link">Meu Portifólio</a>
           </li>
           <li class = "nav-item conta">
-            <a href = "/infoConta" class = "nav-link" id="nomeUser"></a>
+            <a href = "/infoConta" class = "nav-link" id="nomeUser">Conta</a>
           </li>
           <li class = "nav-item conta">
             <a href = "/sair" class = "nav-link">LogOut</a>
+          </li>
+          <li class = "nav-item contaN">
+            <a href = "pages/login.html" class = "btn btn-outline-light ml-4">Entrar</a>
           </li>
         </ul>
       </div>
@@ -210,6 +216,15 @@
     <!--FIM do footer-->
       <!--FIM do footer-->
 
+    <iframe
+            class = "chatbot"
+            class = "d-none d-md-block"
+            allow="microphone;"
+            width="350"
+            height="430"
+            src="https://console.dialogflow.com/api-client/demo/embedded/3d42ec52-2a0f-42cf-bd76-04466af73367">
+    </iframe>
+
       
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
@@ -225,6 +240,8 @@
         let y = document.getElementsByClassName("contaN");
         x[0].style.display = "none";
         x[1].style.display = "none";
+        x[2].style.display = "none";
+        x[3].style.display = "none";
         y[0].style.display = "block";
       } else {
         let x = document.getElementsByClassName("conta");
@@ -232,6 +249,8 @@
         document.getElementById("nomeUser").innerHTML = nome;
         x[0].style.display = "block";
         x[1].style.display = "block";
+        x[2].style.display = "block";
+        x[3].style.display = "block";
         y[0].style.display = "none";
       }
               

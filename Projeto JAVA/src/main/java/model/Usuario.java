@@ -10,6 +10,7 @@ public class Usuario {
     private String email;
     private LocalDate dt_nascimento;
     private String senha;
+    private Double Valor;
 
     public Usuario(String cpf, String p_nome, String u_nome, String email, LocalDate dt_nascimento, String senha) {
         this.cpf = cpf;
